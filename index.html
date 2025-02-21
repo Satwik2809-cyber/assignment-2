@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - TasteTheGlobe</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('background-image.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .container {
+            width: 80%; /* Adjusted width for better structure */
+            margin: auto;
+            padding: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.2); /* Adding subtle boundary */
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for visibility */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero {
+            animation: fadeIn 1.5s ease-in-out;
+            padding: 50px;
+        }
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            color: #ff6b6b;
+        }
+        .trending, .recent {
+            animation: fadeIn 1.5s ease-in-out;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .categories img, .recipe img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #ff6b6b;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="logo">TasteTheGlobe</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="signin.html">Sign In</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="cultural_insight.html">Cultural Insight</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h2>Embark On a Culinary Journey Across The Globe</h2>
+        <p>Discover recipes from different cultures and master the art of cooking.</p>
+    </section>
+
+    <section class="trending">
+        <h3>Trending Categories</h3>
+        <div class="categories">
+            <div class="category">
+                <img src="chinese-cuisine.jpg" alt="Chinese Cuisine">
+                <p>Chinese Cuisine (4.5 ⭐)</p>
+            </div>
+            <div class="category">
+                <img src="italian-cuisine.jpg" alt="Italian Cuisine">
+                <p>Italian Cuisine (4.2 ⭐)</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="recent">
+        <h3>Recently Played</h3>
+        <div class="recipe">
+            <img src="french-toast.jpg" alt="French Toast">
+            <p>How to make French Toast - Roberta Anny</p>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 TasteTheGlobe. All rights reserved.</p>
+    </footer>
+</body>
+</html>
